@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("button").click(function(){
+          $("#nome").hide();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>Teste para esconder parágrafo id=nome</h2>
+    <p>Um parágrafo qualquer sem id.</p>
+    <p id="nome">Este é o parágrafo com id=nome</p>
+    <button>Click para esconder parágrafo id=nome</button>
+  </body>
+</html>
