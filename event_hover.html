@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!-- COLABORADOR: Edivaldo Ribeiro (java.betel@uol.com.br) - 24nov2018 -->
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("#p1").hover(function(){
+        alert("evento_hover entrou em p1");
+      },
+      function(){
+        alert("saindo de p1");
+      });
+    });
+    </script>
+  </head>
+  <body>
+    <p id="p1">parágrafo um. teste event_hover (p1).</p>
+    <p id="p2">parágrafo dois.</p>
+    <p id="p1">parágrafo treis.</p>
+  </body>
+</html>
