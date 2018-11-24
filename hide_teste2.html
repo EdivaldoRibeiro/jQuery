@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- COLABORADOR: Edivaldo Ribeiro (java.betel@uol.com.br) - 24nov2018 -->
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".ex .hide").click(function(){
+          $(this).parents(".ex").hide("slow");
+        });
+      });
+    </script>
+    <style>
+      div.ex {
+        background-color: #e5eecc;
+        padding: 7px;
+        border: solid 1px #c3c3c3;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Estudos Avançados</h3>
+    <div class="ex">
+      <button class="hide">Hide me</button>
+      <p>Contato: Severino Silva<br>
+      Rua Tamoio, 121, Luiziânia<br>
+      São Paulo</p>
+    </div>
+    <h3>Usinas Alcools</h3>
+    <div class="ex">
+      <button class="hide">Hide me</button>
+      <p>Contato: Jonata Miller<br>
+      Rua Tamandaré, 265, Luiziânia<br>
+      São Paulo</p>
+    </div>
+  </body>
+</html>
