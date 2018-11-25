@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- COLABORADOR: Edivaldo Ribeiro (java.betel@uol.com.br) - 25nov2018 -->
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#flip").click(function(){
+          $("#panel").slideDown(5000);
+        });
+        $("#stop").click(function(){
+          $("#panel").stop();
+        });
+      });
+    </script>
+
+    <style>
+      #panel, #flip {
+        padding: 5px;
+        font-size: 18px;
+        text-align: center;
+        background-color: #555;
+        color: white;
+        border: solid 1px #666;
+        border-radius: 3px;
+      }
+
+      #panel {
+        padding: 50px;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="stop">Parar o slideDown</button>
+    <div id="flip">Click para exibir o slide_down_panel</div>
+    <div id="panel">Meu aprendizado de jQuery</div>
+  </body>
+</html>
