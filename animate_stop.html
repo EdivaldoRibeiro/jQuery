@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- COLABORADOR: Edivaldo Ribeiro (java.betel@uol.com.br) - 25nov2018 -->
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#start").click(function(){
+          $("div").animate({left: '100px'}, 5000);
+          $("div").animate({fontSize: '3em'}, 5000);
+        });
+
+        $("#stop").click(function(){
+          $("div").stop();
+        });
+
+        $("#stop2").click(function(){
+          $("div").stop(true);
+        });
+
+        $("#stop3").click(function(){
+          $("div").stop(true, true);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button id="start">Iniciar</button>
+    <button id="stop">Parar</button>
+    <button id="stop2">Parar tudo</button>
+    <button id="stop3">Parar mas finalizar</button>
+    <p>O botão "Iniciar" começa a animação.</p>
+    <p>O botão "Parar" interrompe a animação corrente, mas pode ser continuada.</p>
+    <p>O botão "Parar tudo" encerra a animação corrente e limpa a fila de animação; então toda a animação é encerrada.</p>
+    <p>O botão "Parar mas finalizar" avança para o fim e encerra toda a animação.</p>
+    <div style="background:#98bf21;height:100px;width:200px;position:absolute;">Edivaldo</div>
+
+  </body>
+</html>
